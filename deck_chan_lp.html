@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>デッキちゃん | ブラシ屋が作る本物のデッキブラシ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green:  { DEFAULT: '#4A7C59', light: '#E6F2EA', dark: '#3A6648' },
+            brown:  { DEFAULT: '#C4A472', dark: '#8B6F3E' },
+            cream:  '#FAF8F3',
+          },
+          fontFamily: {
+            ja: ['"Hiragino Kaku Gothic Pro"', '"Yu Gothic"', 'Meiryo', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif; }
+    .drop-green { filter: drop-shadow(0 20px 40px rgba(74,124,89,.18)); }
+    .drop-md    { filter: drop-shadow(0 8px 20px rgba(0,0,0,.15)); }
+    .card-hover { transition: transform .25s; }
+    .card-hover:hover { transform: translateY(-6px); }
+    .btn-hover  { transition: transform .2s, box-shadow .2s; }
+    .btn-hover:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body class="bg-cream text-gray-800">
+
+  <!-- ===== NAV ===== -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+      <img src="logo/アートボード 1.png" alt="DAIWA" class="h-14 w-auto" />
+      <a href="#order" class="bg-green text-white font-bold text-sm px-5 py-2 rounded-full hover:bg-green-dark transition-colors">購入する</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="bg-gradient-to-br from-[#F5F0E8] to-[#E8F2EA] px-6 pt-16 pb-0 text-center overflow-hidden">
+    <span class="inline-block bg-brown text-white text-xs font-bold tracking-widest px-4 py-1 rounded-full mb-5">＼ NEW ／ 新発売！</span>
+    <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight mb-3">
+      ブラシ屋が作る<br><span class="text-green">本物</span>のデッキブラシ
+    </h1>
+    <p class="text-gray-500 text-base sm:text-lg max-w-xl mx-auto mb-6 leading-relaxed">
+      小さいのに実用的。ロング＆ショートのセットでキッチンも洗面台も、どこでもピカピカ。
+    </p>
+    <img src="キャラなど/1000w/アセット 37キャラ.png" alt="" class="h-6 w-auto mx-auto mb-6" />
+    <a href="#order" class="inline-block bg-green text-white font-bold text-lg px-12 py-4 rounded-full shadow-lg shadow-green/30 btn-hover">
+      今すぐ購入する
+    </a>
+    <!-- 商品画像＋右カラム -->
+    <div class="flex justify-center gap-5 mt-12 max-w-xl mx-auto">
+      <div class="flex-1">
+        <img src="商品画像/shouhin.png" alt="デッキちゃん パッケージ" class="w-full drop-green" />
+      </div>
+      <!-- 右カラム：バッジ上・仕様下 -->
+      <div class="w-40 shrink-0 flex flex-col justify-between pb-10 pt-2 text-left">
+        <img src="キャラなど/1000w/アセット 29キャラ.png" alt="ブラシ屋が作る本物のデッキブラシ" class="w-28 drop-md" />
+        <div class="text-xs text-gray-700 font-bold leading-loose">
+          <p class="text-green text-[10px] tracking-wider mb-0.5">ロングタイプ</p>
+          <p>●約幅4.5×長13.5×高3cm</p>
+          <p>●約15g（1本）</p>
+          <p class="text-green text-[10px] tracking-wider mt-2 mb-0.5">ショートタイプ</p>
+          <p>●　　　　　　　　</p>
+          <p class="mt-2">●柄／ABS樹脂、毛／PBT</p>
+          <p>●日本製</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT IS ===== -->
+  <section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-green font-bold text-xs tracking-widest uppercase border-b-2 border-green pb-0.5 mb-3 inline-block">About</span>
+        <h2 class="text-3xl sm:text-4xl font-black mb-6 leading-snug">デッキちゃんって<br>なあに？</h2>
+        <div class="inline-flex items-center gap-2 bg-brown text-white font-bold text-sm px-4 py-2 rounded-xl mb-6">
+          <img src="キャラなど/1000w/アセット 38キャラ.png" alt="" class="h-9 w-auto" />
+          ブラシ屋が本気で作った
+        </div>
+        <p class="text-gray-500 leading-relaxed mb-4">
+          大和化学工業所がブラシ専門メーカーとして培ってきた技術を凝縮。本物のデッキブラシをぎゅっと小さくした、かわいくて使えるクリーニングブラシセットです。
+        </p>
+        <p class="text-gray-500 leading-relaxed">
+          ロングタイプとショートタイプ（ボールチェーン付き）の2本セット。キッチン・洗面台・デスクまわりなど、毎日のちょこっと掃除をもっと楽しく。
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img src="商品画像/tanntyousetto.png" alt="デッキちゃん ロング＆ショートセット" class="max-w-md w-full drop-green" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIVIDER ===== -->
+  <div class="flex justify-center py-2">
+    <img src="キャラなど/1000w/アセット 20キャラ.png" alt="" class="h-6 w-auto" />
+  </div>
+
+  <!-- ===== SET CONTENTS ===== -->
+  <section class="bg-green-light py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-green font-bold text-xs tracking-widest uppercase border-b-2 border-green pb-0.5 mb-3 inline-block">Set Contents</span>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4">2本セットで大活躍</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">ロングとショートのセット。ショートはボールチェーン付きなので、外に持ち出しても大活躍！</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <!-- ロング -->
+        <div class="bg-white rounded-2xl p-10 text-center shadow-md relative overflow-hidden flex flex-col">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-green"></div>
+          <img src="商品画像/nagai.png" alt="ロングタイプ" class="h-72 w-auto mx-auto mb-6 drop-md" />
+          <p class="text-green font-black text-xl mb-3">ロングタイプ</p>
+          <p class="text-gray-500 text-sm leading-relaxed">本物のデッキブラシを忠実に再現。コンロや洗面台など、細かい部分にもブラシの毛がしっかり届く。</p>
+        </div>
+        <!-- ショート -->
+        <div class="bg-white rounded-2xl p-10 text-center shadow-md relative overflow-hidden flex flex-col">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-green"></div>
+          <img src="商品画像/mijikai.png" alt="ショートタイプ" class="h-72 w-auto mx-auto mb-6 drop-md" />
+          <p class="text-green font-black text-xl mb-3">ショートタイプ</p>
+          <p class="text-gray-500 text-sm leading-relaxed">手のひらサイズのコンパクトブラシ。取り出しやすくバッグに付けて外へ持ち出しても◎。</p>
+          <span class="inline-block bg-brown text-white text-sm font-bold px-4 py-1.5 rounded-full mt-5">ボールチェーン付き</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCENES ===== -->
+  <section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-green font-bold text-xs tracking-widest uppercase border-b-2 border-green pb-0.5 mb-3 inline-block">How to Use</span>
+        <h2 class="text-3xl sm:text-4xl font-black mb-3">こんな場面で活躍します</h2>
+        <p class="text-gray-500">小さくてもブラシの毛腰はしっかり。気になるあの場所をゴシゴシ♪</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Scene 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+          <img src="仕様事例/IMG_6743.jpeg" alt="水切りラックの掃除" class="w-full aspect-square object-cover object-center" />
+          <div class="p-5 flex items-center gap-3">
+            <img src="キャラなど/1000w/アセット 38キャラ.png" alt="" class="h-16 w-auto shrink-0" />
+            <h3 class="text-green font-extrabold text-sm">水切りラックの細かい汚れに</h3>
+          </div>
+        </div>
+        <!-- Scene 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+          <img src="仕様事例/IMG_6749.jpeg" alt="IHコンロのふち掃除" class="w-full aspect-square object-cover object-center" />
+          <div class="p-5 flex items-center gap-3">
+            <img src="キャラなど/1000w/アセット 41キャラ.png" alt="" class="h-16 w-auto shrink-0" />
+            <h3 class="text-green font-extrabold text-sm">IHコンロのふちや隙間に</h3>
+          </div>
+        </div>
+        <!-- Scene 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+          <img src="仕様事例/IMG_6736.jpeg" alt="洗面台の排水口まわりの掃除" class="w-full aspect-square object-cover" />
+          <div class="p-5 flex items-center gap-3">
+            <img src="キャラなど/1000w/アセット 40キャラ.png" alt="" class="h-16 w-auto shrink-0" />
+            <h3 class="text-green font-extrabold text-sm">洗面台・排水口のまわりに</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-green font-bold text-xs tracking-widest uppercase border-b-2 border-green pb-0.5 mb-3 inline-block">Features</span>
+        <h2 class="text-3xl sm:text-4xl font-black">デッキちゃんの<br>こだわりポイント</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <div class="bg-cream rounded-2xl p-9 text-center border-2 border-[#E8E4DC]">
+          <div class="w-12 h-12 bg-green text-white font-black text-xl rounded-full flex items-center justify-center mx-auto mb-4">1</div>
+          <h3 class="font-extrabold text-lg mb-3">本物のブラシ屋の品質</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">大和化学工業所はプラスチック射出成形・家庭用品の専門メーカー。毛の材質や密度、角度まで徹底追求。</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-9 text-center border-2 border-[#E8E4DC]">
+          <div class="w-12 h-12 bg-green text-white font-black text-xl rounded-full flex items-center justify-center mx-auto mb-4">2</div>
+          <h3 class="font-extrabold text-lg mb-3">ロング＋ショートの2本構成</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">シーンに合わせて使い分けできる2本セット。ショートはボールチェーン付きで持ち出しても大活躍。</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-9 text-center border-2 border-[#E8E4DC]">
+          <div class="w-12 h-12 bg-green text-white font-black text-xl rounded-full flex items-center justify-center mx-auto mb-4">3</div>
+          <h3 class="font-extrabold text-lg mb-3">どこでも使えるコンパクトさ</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">どこにでも置けるので、リモコンやキーボードのすき間などの汚れをかきだしたり、あんなことにもこんなことにも！使い方は無限大！！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIVIDER ===== -->
+  <div class="flex justify-center py-4 bg-white">
+    <img src="キャラなど/1000w/アセット 45キャラ.png" alt="" class="h-6 w-auto" />
+  </div>
+
+  <!-- ===== CTA ===== -->
+  <section id="order" class="bg-gradient-to-br from-green to-green-dark py-20 px-6 text-center">
+    <div class="flex justify-center gap-8 mb-12 flex-wrap">
+      <img src="商品画像/nagai.png"  alt="ロングタイプ"  class="h-56 w-auto drop-shadow-2xl" />
+      <img src="商品画像/mijikai.png" alt="ショートタイプ" class="h-56 w-auto drop-shadow-2xl" />
+    </div>
+    <h2 class="text-3xl sm:text-5xl font-black text-white mb-4 leading-tight">デッキちゃんを<br>手に入れよう</h2>
+    <p class="text-white/75 text-base sm:text-lg mb-10 max-w-md mx-auto">ブラシ屋が本気で作った、小さくて頼れる相棒。ロング＆ショートの2本セットでお届けします。</p>
+    <a href="#" class="inline-block bg-white text-green font-bold text-xl px-16 py-5 rounded-full shadow-2xl btn-hover">
+      購入ページへ進む
+    </a>
+    <p class="text-white/50 text-sm mt-5">※ 購入ページは準備中です。もうしばらくお待ちください。</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-100 border-t border-gray-200 py-10 px-6 text-center">
+    <img src="logo/アートボード 1.png" alt="DAIWA Chemical Industry Co., Ltd." class="h-20 w-auto mx-auto mb-5" />
+    <p class="text-gray-800 text-base">プラスチック射出成形・家庭用品 企画・製造・販売</p>
+    <p class="text-gray-800 text-sm mt-1">〒642-0012　和歌山県海南市岡田305-5　TEL：073-482-9595</p>
+    <p class="text-gray-800 text-sm mt-1">
+      <a href="https://daiwakagaku.net/" target="_blank" rel="noopener" class="underline hover:text-green transition-colors">https://daiwakagaku.net/</a>
+    </p>
+    <p class="text-gray-800 text-sm mt-4">© 2026 株式会社 大和化学工業所</p>
+  </footer>
+
+</body>
+</html>
