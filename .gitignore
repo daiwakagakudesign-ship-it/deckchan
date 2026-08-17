@@ -1,0 +1,15 @@
+# デザインソースファイル
+*.ai
+*.psd
+
+# ドキュメント
+*.doc
+*.docx
+*.md
+!README.md
+
+# 社内資料
+仕様事例/
+
+# Claude Code設定
+CLAUDE.md
